@@ -139,6 +139,23 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
+                        case 'natsuki':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/Doki_Nat_Assets', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Nat Idle', 24);
+				animation.addByPrefix('singUP', 'Nat Sing Note Up', 24);
+				animation.addByPrefix('singRIGHT', 'Nat Sing Note Right', 24);
+				animation.addByPrefix('singDOWN', 'Nat Sing Note DOWN', 24);
+				animation.addByPrefix('singLEFT', 'Nat Sing Note Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
 				frames = tex;
